@@ -20,12 +20,13 @@ namespace Program_25_11
             gradeChem = 1;
             gradePhys = 1;
         }
-        public string studentName;
-        public int gradeChem;
-        public int gradePhys;
+         string studentName;
+         int gradeChem;
+         int gradePhys;
         public double gradeAverage()
         {
             return (double)(gradeChem + gradePhys) / 2;
         }
+
     }
 }
