@@ -10,13 +10,16 @@ namespace Program_25_11
     {
         static void Main(string[] args)
         {
-            Student Fero = new Student("Fero",1,3);
-            Student Marek = new Student("Marek",1,5);
-            Student Jano = new Student("Jano");
+            Student[] students = new Student[3];
+            for (int i = 0; i < students.Length; i++)
+            {
+                students[i] = new Student("Fero");
+            }
+            
 
-            Console.WriteLine(Fero.gradeAverage());
-            Console.WriteLine(Marek.gradeAverage());
-            Console.WriteLine(Jano.gradeAverage());
+            Console.WriteLine(students[0].gradeAverage());
+            Console.WriteLine(students[1].gradeAverage());
+            Console.WriteLine(students[2].gradeAverage());
             Console.ReadKey();
         }
     }
