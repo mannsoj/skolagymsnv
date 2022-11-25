@@ -10,10 +10,13 @@ namespace Program_25_11
     {
         static void Main(string[] args)
         {
-            Student student = new Student();
-            student.name = "sheit";
+            Student Fero = new Student("Fero",1,3);
+            Student Marek = new Student("Marek",1,5);
+            Student Jano = new Student("Jano");
 
-            Console.WriteLine(student.gradeAverage());
+            Console.WriteLine(Fero.gradeAverage());
+            Console.WriteLine(Marek.gradeAverage());
+            Console.WriteLine(Jano.gradeAverage());
             Console.ReadKey();
         }
     }
