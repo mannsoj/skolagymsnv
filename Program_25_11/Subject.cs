@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Program_25_11
 {
+
     internal class Subject
     {
         public Subject(string name, int one, int two, int three)
