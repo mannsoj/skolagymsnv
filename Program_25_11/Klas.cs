@@ -14,8 +14,7 @@ namespace Program_25_11
             for (int i = 0; i < students.Length; i++)
             {
                 students[i] = new Student("Fero");
-            }
-            
+            }  
 
             Console.WriteLine(students[0].gradeAverage());
             Console.WriteLine(students[1].gradeAverage());

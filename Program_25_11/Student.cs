@@ -8,7 +8,7 @@ namespace Program_25_11
 {
     internal class Student
     {
-        public Student(string name,int gradeChe ,int gradePhy )
+        public Student(string name,int gradeChe ,int gradePhy)
         {
          studentName = name;
          gradeChem = gradeChe;
