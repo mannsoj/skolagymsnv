@@ -27,6 +27,9 @@ namespace Program_25_11
             //dú2 vypiste kazdeho ziaka z kazdeho predmetu aj celkovo, celkovy priemer vsetkych zo vsetkych znamok 
 
 
+            //daco co sven urobil 
+            //CZiak[] ziaci2 = {new CZiak("xy"),new CZiak("xy"),new CZiak("xy")};
+
             Console.WriteLine(students[0].gradeAverage());
             Console.WriteLine(students[1].gradeAverage());
             Console.WriteLine(students[2].gradeAverage());
