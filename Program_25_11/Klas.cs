@@ -15,9 +15,12 @@ namespace Program_25_11
             Student[] students = new Student[3];
             for (int i = 0; i < students.Length; i++)
             {
-                students[i] = new Student("Fero");
+                students[i] = new Student();
             }
+
+            students[0].Constructor("Alica", 3, 4, 5, 3, 4, 5, 3, 4, 5);
             students[1].Constructor("Jano", 1, 2, 3, 1, 2, 3, 1, 2, 3);
+            students[2].Constructor("Marek", 1, 2, 3, 3, 2, 5, 4, 3, 2);
 
 
             double classChemistryAverage()
@@ -25,9 +28,9 @@ namespace Program_25_11
                 double avrg = 0;
                 foreach(Student student in students)
                 {
-                   avrg += student.ChemistryAverage();
+                  avrg += student.ChemistryAverage();
                 }
-                return avrg;
+                return avrg / students.Length;
             }
             double classPhysicsAverage()
             {
@@ -36,7 +39,7 @@ namespace Program_25_11
                 {
                     avrg += student.PhysicsAverage();
                 }
-                return avrg;
+                return avrg / students.Length;
             }
             double classMathAverage()
             {
@@ -45,7 +48,7 @@ namespace Program_25_11
                 {
                     avrg += student.MathAverage();
                 }
-                return avrg;
+                return avrg / students.Length;
             }
             double classAverage()
             {
@@ -54,24 +57,25 @@ namespace Program_25_11
                 {
                     avrg += student.getAverage();
                 }
-                return avrg;
+                return avrg / students.Length;
             }
 
-
-            Console.WriteLine(students[1].ChemistryAverage());
-            Console.WriteLine(students[1].PhysicsAverage());
-            Console.WriteLine(students[1].MathAverage());
-            Console.WriteLine(students[1].getAverage());
-            Console.WriteLine(classAverage());
-            Console.WriteLine(classMathAverage());
-            Console.WriteLine(classPhysicsAverage());
-            Console.WriteLine(classChemistryAverage());
 
 
             //dú1 ziak fero ma z predmetu fyz znamky x,y,z
             //alebo vytvorit tabulku?
+            Console.WriteLine("{0,30}\n", "ZNÁMKY");
+            Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}\n", "Meno" , "Chémia", "Fyzika", "Matematika");
+            for (int ctr = 0; ctr < students.Length; ctr++)
+                Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}", students[ctr].studentName, students[ctr].ChemGrades(), students[ctr].PhysGrades(), students[ctr].MathGrades());
 
             //dú2 vypiste kazdeho ziaka z kazdeho predmetu aj celkovo, celkovy priemer vsetkych zo vsetkych znamok 
+            Console.WriteLine("\n\n{0,40}\n", "PRIEMERY ZNÁMOK");
+            Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}\n", "Meno", "Chémia", "Fyzika", "Matematika");
+            for (int ctr = 0; ctr < students.Length; ctr++)
+                Console.WriteLine("{0,-20} {1,-20} {2,-20} {3,-20}", students[ctr].studentName, students[ctr].ChemistryAverage(), students[ctr].PhysicsAverage(), students[ctr].MathAverage());
+
+            Console.WriteLine($"\nCelkový priemer z Chémie bol {classChemistryAverage()}, z Fyziky {classPhysicsAverage()}, z Matematiky {classMathAverage()} a celkový priemer celej triedy zo všetkých známok bol {classAverage()}");
 
 
             //daco co sven urobil 

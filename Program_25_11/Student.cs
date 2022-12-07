@@ -16,9 +16,9 @@ namespace Program_25_11
             }
          studentName = name;
         }
-        public Student(string name)
+        public Student()
         {
-            studentName = name;   
+               
         }
 
         public Subject[] subjects = new Subject[3];
@@ -66,15 +66,25 @@ namespace Program_25_11
         {
             return subjects[1].getAverage();
         }
-        public void MathAverage()
+        public double MathAverage()
         {
-            Console.WriteLine(subjects[2].getAverage());
+            return subjects[2].getAverage();
         }
         public double getAverage()
         {
-            Console.WriteLine(subjects.Length);
-            //( subjects[0].getAverage() + subjects[1].getAverage() + subjects[2].getAverage() ) / (double)subjects.Length
-            return 2.0;
+            return (subjects[0].getAverage() + subjects[1].getAverage() + subjects[2].getAverage()) / (double)subjects.Length;
+        }
+        public string ChemGrades()
+        {
+            return subjects[0].getGrades();
+        }
+        public string PhysGrades()
+        {
+            return subjects[1].getGrades();
+        }
+        public string MathGrades()
+        {
+            return subjects[2].getGrades();
         }
 
 
@@ -85,7 +95,7 @@ namespace Program_25_11
         private int[] chemGrades = new int[3];
         private int[] physGrades = new int[3];
         private int[] mathGrades = new int[3];
-        string studentName;
+        public string studentName;
         
         
 

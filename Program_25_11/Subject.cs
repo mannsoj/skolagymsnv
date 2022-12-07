@@ -51,5 +51,15 @@ namespace Program_25_11
             }
             return average/grades.Length;
         }
+        public string getGrades()
+        {
+            string grds;
+            grds = grades[0].ToString();
+            for (int i = 1; i < grades.Length; i++)
+            {
+                grds += "," + grades[i].ToString();
+            }
+            return grds;
+        }
     }
 }
