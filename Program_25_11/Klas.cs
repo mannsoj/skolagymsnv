@@ -73,7 +73,7 @@ namespace Program_25_11
             Console.WriteLine("\n\n{0,40}\n", "PRIEMERY ZNÁMOK");
             Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}\n", "Meno", "Chémia", "Fyzika", "Matematika");
             for (int ctr = 0; ctr < students.Length; ctr++)
-                Console.WriteLine("{0,-20} {1,-20} {2,-20} {3,-20}", students[ctr].studentName, students[ctr].ChemistryAverage(), students[ctr].PhysicsAverage(), students[ctr].MathAverage());
+                Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}", students[ctr].studentName, Math.Truncate(100 * students[ctr].ChemistryAverage()) / 100, Math.Truncate(100 * students[ctr].PhysicsAverage()) / 100, Math.Truncate(100 * students[ctr].MathAverage()) / 100);
 
             Console.WriteLine($"\nCelkový priemer z Chémie bol {classChemistryAverage()}, z Fyziky {classPhysicsAverage()}, z Matematiky {classMathAverage()} a celkový priemer celej triedy zo všetkých známok bol {classAverage()}");
 
