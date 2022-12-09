@@ -6,3 +6,11 @@ C:\DavidH\pro_6\Program_25_11\git\Program_25_11\obj\Debug\Program_25_11.csproj.S
 C:\DavidH\pro_6\Program_25_11\git\Program_25_11\obj\Debug\Program_25_11.csproj.CoreCompileInputs.cache
 C:\DavidH\pro_6\Program_25_11\git\Program_25_11\obj\Debug\Program_25_11.exe
 C:\DavidH\pro_6\Program_25_11\git\Program_25_11\obj\Debug\Program_25_11.pdb
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\bin\Debug\Program_25_11.exe.config
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\bin\Debug\Program_25_11.exe
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\bin\Debug\Program_25_11.pdb
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\obj\Debug\Program_25_11.csproj.AssemblyReference.cache
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\obj\Debug\Program_25_11.csproj.SuggestedBindingRedirects.cache
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\obj\Debug\Program_25_11.csproj.CoreCompileInputs.cache
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\obj\Debug\Program_25_11.exe
+C:\Users\dvidh\Source\Repos\skolagymsnv\Program_25_11\obj\Debug\Program_25_11.pdb
