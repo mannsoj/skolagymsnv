@@ -32,6 +32,8 @@ namespace Program_25_11
                 }
                 return avrg / students.Length;
             }
+
+
             double classPhysicsAverage()
             {
                 double avrg = 0;
@@ -41,6 +43,8 @@ namespace Program_25_11
                 }
                 return avrg / students.Length;
             }
+
+
             double classMathAverage()
             {
                 double avrg = 0;
@@ -50,6 +54,8 @@ namespace Program_25_11
                 }
                 return avrg / students.Length;
             }
+
+
             double classAverage()
             {
                 double avrg = 0;
@@ -76,6 +82,7 @@ namespace Program_25_11
                 Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}", students[ctr].studentName, Math.Truncate(100 * students[ctr].ChemistryAverage()) / 100, Math.Truncate(100 * students[ctr].PhysicsAverage()) / 100, Math.Truncate(100 * students[ctr].MathAverage()) / 100);
 
             Console.WriteLine($"\nCelkový priemer z Chémie bol {classChemistryAverage()}, z Fyziky {classPhysicsAverage()}, z Matematiky {classMathAverage()} a celkový priemer celej triedy zo všetkých známok bol {classAverage()}");
+
 
 
             //daco co sven urobil 
