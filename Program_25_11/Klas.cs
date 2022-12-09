@@ -85,6 +85,9 @@ namespace Program_25_11
 
 
 
+            //du1 celkovy priemer
+            //du2 vytvorit triedu trieda a potom ine veci atd atd atd atd
+
             //daco co sven urobil 
             //CZiak[] ziaci2 = {new CZiak("xy"),new CZiak("xy"),new CZiak("xy")};
 
