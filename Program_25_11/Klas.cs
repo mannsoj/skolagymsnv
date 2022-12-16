@@ -13,9 +13,8 @@ namespace Program_25_11
         {
             Classroom classroom = new Classroom();
 
-
-            classroom.writeAverageTable();
             classroom.writeGradesTable();
+            classroom.writeAverageTable();
             classroom.writeSomething();
 
 

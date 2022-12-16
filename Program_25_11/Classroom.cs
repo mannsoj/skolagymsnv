@@ -20,6 +20,8 @@ namespace Program_25_11
             students[2].Constructor("Marek", 1, 2, 3, 3, 2, 5, 4, 3, 2);
         }
 
+        
+
         public int getNumberOfStudents()
         {
             return students.Length;
@@ -89,7 +91,7 @@ namespace Program_25_11
             Console.WriteLine("\n\n{0,40}\n", "PRIEMERY ZNÁMOK");
             Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}\n", "Meno", "Chémia", "Fyzika", "Matematika");
             for (int ctr = 0; ctr < getNumberOfStudents(); ctr++)
-                Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}", getStudent(ctr).studentName, Math.Truncate(100 * students[ctr].ChemistryAverage()) / 100, Math.Truncate(100 * students[ctr].PhysicsAverage()) / 100, Math.Truncate(100 * students[ctr].MathAverage()) / 100);
+                Console.WriteLine("{0,-15} {1,-15} {2,-15} {3,-15}", getStudent(ctr).studentName, students[ctr].ChemistryAverage(),students[ctr].PhysicsAverage(), students[ctr].MathAverage());
         }
 
         public void writeSomething()

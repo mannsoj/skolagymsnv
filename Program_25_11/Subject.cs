@@ -49,7 +49,7 @@ namespace Program_25_11
                 average += grades[i];
                 i++;
             }
-            return average/grades.Length;
+            return Math.Truncate(100 * average / grades.Length) / 100;
         }
         public string getGrades()
         {
